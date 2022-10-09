@@ -4,8 +4,24 @@
     background-color: #000;
     position: fixed;
     border-bottom: 1px solid white;
+    display: flex;
     .header_container {
         padding: 0 40px;
+        display: flex;
+        align-items: center;
+        .header_link {
+            text-decoration: none;
+            color: #FFF;
+            font-size: 20px;
+            text-transform: uppercase;
+            &:visited {
+                color: #FFF;
+            }
+            &:hover {
+                font-weight: 600;
+                text-decoration: overline;
+            }
+        }
     }
     .header_logo {
         height: 170px;

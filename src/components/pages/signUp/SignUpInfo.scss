@@ -1,37 +1,53 @@
-.main {
-    padding-top:200px ;
-    min-height: 100vh;
+.sign-up {
+    // padding-top:150px ;
+    height: 100vh;
+    min-height: 750px;
     background-color: #000;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     .sign-up_form {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
         border: 1px solid rgb(159, 159, 159);
         background-color: rgb(53, 53, 53);
-        padding: 30px 0;
+        padding: 20px 0 ;
         align-self: center;
         min-width: 350px;
         width: 60%;
         border-radius: 16px;
-        .input {
-            height: 50px;
-            width: 40%;
-            min-width: 300px;
-            margin-bottom: 30px;
-            border: 0;
-            outline: none;
-            padding-left: 20px ;
-            border-radius: 8px;
-            &:focus{
-                transition: all .2s ;
-                border-width: 2px ;
-                border-style: solid;
-                border-color: rgb(139, 22, 143);
+        gap: 20px;
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            .input-label{
+                color: #fff;
+                text-align: left;
+                margin: 0 0 10px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .input {
+                height: 50px;
+                min-width: 300px;
+                border: 0;
+                outline: none;
+                padding-left: 20px ;
+                border-radius: 8px;
+                &:focus{
+                    transition: all .2s ;
+                    border-width: 2px ;
+                    border-style: solid;
+                    border-color: rgb(139, 22, 143);
+                }
+            }
+            .error{
+                font-size: 13px;
+                margin-top: 4px;
+                color: rgb(174, 15, 15);
             }
         }
         .submit-button {
@@ -60,11 +76,11 @@
 
 
 @media only  screen and (max-width: 425px) {
-    .main {
+    .sign-up {
         padding-top:100px ;
         background-color: rgba(25, 25, 25,1);
         .sign-up_form { 
-            min-width: 280px;
+            min-width: 320px;
             .input {
                 min-width: 260px;
                 padding-left: 16px ;
