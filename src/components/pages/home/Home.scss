@@ -1,10 +1,74 @@
 .main {
+    padding-top:200px ;
     min-height: 100vh;
     background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .sign-up_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgb(159, 159, 159);
+        background-color: rgb(53, 53, 53);
+        padding: 30px 0;
+        align-self: center;
+        min-width: 350px;
+        width: 60%;
+        border-radius: 16px;
+        .input {
+            height: 50px;
+            width: 40%;
+            min-width: 300px;
+            margin-bottom: 30px;
+            border: 0;
+            outline: none;
+            padding-left: 20px ;
+            border-radius: 8px;
+            &:focus{
+                transition: all .2s ;
+                border-width: 2px ;
+                border-style: solid;
+                border-color: rgb(139, 22, 143);
+            }
+        }
+        .submit-button {
+            height: 50px;
+            width: 35%;
+            min-width: 270px;
+            border-radius: 8px;
+            border: 0;
+            background-color:  rgb(139, 22, 143);
+            color: #FFF;
+            font-weight: 600;
+            transition: all .3s ;
+            &:hover{
+                transition: all .3s ;
+                transform: scale(0.97);
+            }
+            &:active{
+                transition: all .3s ;
+                transform: scale(0.9);
+            }
+        }
+    }
+    
 }
+
+
 
 @media only  screen and (max-width: 425px) {
     .main {
-        background-color: rgba(25, 25, 25,1)
+        padding-top:100px ;
+        background-color: rgba(25, 25, 25,1);
+        .sign-up_form { 
+            min-width: 280px;
+            .input {
+                min-width: 260px;
+                padding-left: 16px ;
+            }
+        }
     }
 }
