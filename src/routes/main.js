@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainPage, SignUpInfo } from "../components/pages";
+import { MainPage, PersonalInfo, SignUpInfo } from "../components/pages";
 
 export const router = createBrowserRouter([
     {
@@ -12,7 +12,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: 'personalInfo',
-                element: <div>User info</div>
+                element: <PersonalInfo/>
             }
         ]   
     },

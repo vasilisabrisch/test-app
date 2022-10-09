@@ -1,10 +1,9 @@
-.sign-up {
-    // padding-top:150px ;
+.personal-info {
+    display: flex;
+    flex: 1;
     height: 100vh;
     min-height: 750px;
     background-color: #000;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     .form {
@@ -67,23 +66,6 @@
             &:active{
                 transition: all .3s ;
                 transform: scale(0.9);
-            }
-        }
-    }
-    
-}
-
-
-
-@media only  screen and (max-width: 425px) {
-    .sign-up {
-        padding-top:100px ;
-        background-color: rgba(25, 25, 25,1);
-        .sign-up_form { 
-            min-width: 320px;
-            .input {
-                min-width: 260px;
-                padding-left: 16px ;
             }
         }
     }

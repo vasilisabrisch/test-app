@@ -9,6 +9,7 @@
         padding: 0 40px;
         display: flex;
         align-items: center;
+        gap: 20px;
         .header_link {
             text-decoration: none;
             color: #FFF;
@@ -38,6 +39,10 @@
         top: 0px;
         .header_container {
             padding: 0 20px;
+            gap: 7px;
+            .header_link {
+                font-size: 14px;
+            }
         }
         .header_logo {
             height: 85px;
